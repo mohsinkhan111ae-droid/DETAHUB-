@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DataCash - Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f7fa;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #667eea, #764ba2);
+      padding: 20px;
+      color: white;
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+    button {
+      width: 220px;
+      padding: 15px;
+      margin: 15px;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    button:hover {
+      transform: scale(1.05);
+    }
+    .start { background: #28a745; }
+    .stop { background: #dc3545; }
+    .withdraw { background: #fd7e14; }
+  </style>
+</head>
+<body>
+  <header>Welcome to DataCash Dashboard</header>
+  <div class="container">
+    <button class="start" onclick="alert('Data Selling Started')">🚀 Start Data Selling</button>
+    <button class="stop" onclick="alert('Data Selling Stopped')">🛑 Stop Data Selling</button>
+    <button class="withdraw" onclick="alert('Withdraw Request Sent')">💸 Withdraw</button>
+  </div>
+</body>
+</html>
